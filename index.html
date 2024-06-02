@@ -21,7 +21,7 @@
             <ul class="listaNav">
                 <li class="listaItem"><a href="./index.html" class="linkNav">Tendencias</a></li>
                 <li class="listaItem"><a href="./registro.html" class="linkNav">Registrarse</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesion</a></li>
+                <li class="listaItem"><a href="./inicioSesion.html" class="linkNav iniciarSesion">Iniciar Sesion</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         <section data-aos="zoom-in" data-aos-duration="1000"  class="sectionPrincipal">
             <h1 class="tituloPrincipal">Películas y series ilimitadas <br>en un solo lugar</h1>
             <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
-            <a class="botonRegistrarse" href="#">Registrate</a>
+            <a class="botonRegistrarse" href="./registro.html">Registrate</a>
         </section>
         
         <section class="buscadorPrincipal">
@@ -42,6 +42,14 @@
             <a href=""></a>
         </section>
     </main>
-    
+    <section id="peliculastendencia" class="peliculasTendencia">
+        <h3>Peliculas en tendencia</h3>
+        <div class="peliculas">
+        </div>
+        <button class="anterior">Atras</button>
+        <button class="siguiente">Siguente</button>
+    </section>
+   
 </body>
+<script src= "./api.js"></script>
 </html>

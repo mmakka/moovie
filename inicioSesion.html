@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/inicioSesion.css">
+    <title>Iniciar sesion</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a href="./index.html" class="anclaLogo">
+                <i class="fa-solid fa-clapperboard fa-flip"></i>
+                <span>C A C # F L I X</span>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <section data-aos="zoom-in">
+            <form action="" method="get" class="form">
+                <h2 class="tittle">Iniciar Sesion</h2>
+                <div>
+                    <input type="email" placeholder="Email" id="email" name = "email">
+                     <div class ="error-text"></div>
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" name = "password">
+                     <div class="error-text"></div>
+                </div>
+
+                <div>
+                    <input class="boton" type="submit" value="Iniciar sesion">
+                </div>
+                <div>
+                    <a class="ayuda" id="Ayuda" href="./registro.html">Registrarse</a>
+                </div>
+
+            </form>
+        </section>
+        
+    </main>
+</body>
+<script src="./main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html> 

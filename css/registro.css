@@ -19,7 +19,7 @@ main{
 }
 
 .formContainer{
-    width: 50%;
+    width: 40%;
     margin-top: 5px;
     font-size: 1.5rem;
     color: rgb(233, 238, 243);
@@ -29,15 +29,13 @@ main{
 
 .form{
     font-weight: 700;
-    font-size: 1.5rem; 
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: rgb(233, 243, 243);
     input{
         border: 4px rgb(192, 55, 55) solid;
         padding: 10px;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         border-radius: 20px;
         background-color: rgb(71, 69, 69);
         text-align: center;
@@ -46,7 +44,7 @@ main{
     button{
         background-color:rgb(192, 55, 55);
         color: rgb(233, 238, 243);
-        padding: 18px;
+        padding: 15px;
         text-align: center;
         border-radius:5px;
         width: 200px;
@@ -55,6 +53,9 @@ main{
     }
     div{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 80%;
         margin:0 auto; 
         font-size: 0.7rem;
