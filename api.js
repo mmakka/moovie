@@ -26,9 +26,9 @@ function dibujarDatos(json){
 
     function Pelicula(obj) {
         return `
-        <a href="./pages/detalle.html">
-            <div class= "pelicula">
-                <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500/${obj.poster_path}" alt="${obj.title}" loading="lazy">
+        <a href="./detalle.html" data-aos="zoom-in"  >
+            <div class="pelicula" >
+                <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500/${obj.poster_path}" alt="${obj.title}" loading="lazy" >
                 <div class="tituloPelicula">
                     <h4>${obj.title}</h4>
                 </div>
@@ -36,8 +36,6 @@ function dibujarDatos(json){
         </a>`;
     };
     
-   
-
 function cargarPaginaSiguiente(){
     currentPage ++;
     llamarAPI(currentPage);

@@ -39,12 +39,11 @@
     .buscadorPrincipal{
         background-color: #181419;
         color:white;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         .tituloSection{
             font-size: 2.5rem;
             font-weight: 700;
@@ -89,26 +88,30 @@
         }
        
     }
-    
 }
 
-
+hr {
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 
 
 #peliculastendencia {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background:linear-gradient(to right top, #0000008a, #0000008a);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 #peliculastendencia h3 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #fff0f0;
     text-align: center;
-    font-size: 24px;
+    font-size: 35px;
 }
 
 .peliculas {

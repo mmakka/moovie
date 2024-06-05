@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <title>C A C # F L I X</title>
@@ -31,19 +32,20 @@
             <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
             <a class="botonRegistrarse" href="./registro.html">Registrate</a>
         </section>
-        
-        <section class="buscadorPrincipal">
-            <h2>¿Qué estás buscando para ver?</h2>
+
+        <section class="buscadorPrincipal" data-aos="fade-up"data-aos-duration="3000" >
+            <h2 class="tituloSection">¿Qué estás buscando para ver?</h2>
             <form action="" class="buscadorPeliculas">
                 <input type="text" class="inputBuscador" placeholder="Buscar...">
                 <input type="submit" class="botonBuscador" value="Buscar">
             </form>
-                
-            <a href=""></a>
+            <hr>
         </section>
     </main>
-    <section id="peliculastendencia" class="peliculasTendencia">
-        <h3>Peliculas en tendencia</h3>
+
+
+    <section id="peliculastendencia" class="peliculasTendencia" >
+        <h3>Las tendencias de hoy</h3>
         <div class="peliculas">
         </div>
         <div class="controls">
@@ -53,5 +55,9 @@
     </section>
    
 </body>
-<script src= "./api.js"></script>
+<script src= "./api.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
