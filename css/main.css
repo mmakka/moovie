@@ -92,12 +92,8 @@
     
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+
+
 
 #peliculastendencia {
     max-width: 1200px;
@@ -122,32 +118,54 @@ body {
 }
 
 .pelicula {
-    flex: 1 1 calc(25% - 30px); /* 4 items per row with space between */
-    background-color: #eaeaea;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(25% - 30px); 
     margin-bottom: 15px;
+    text-align: center;
     position: relative;
-}
-
-.pelicula:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.imgTendencia {
-    max-width: 100%;
+    overflow: hidden;
     border-radius: 8px;
-    transition: opacity 0.3s;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+} 
+
+.pelicula .imgTendencia {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
-.tituloPelicula h4 {
-    margin: 10px 0 0;
-    font-size: 16px;
-    color: #333;
+.tituloPelicula  {
+     width: 0;
+     height: 50vh;
+     background-color: rgba(8, 0, 0, 0.3);
+     position: absolute;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     transition: .6s all;
 }
+
+.tituloPelicula h4{
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.pelicula:hover .tituloPelicula{
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    position: absolute;
+    
+}
+
+.pelicula:hover .tituloPelicula{
+    width: 100%;
+}
+
 
 .anterior, .siguiente {
     display: inline-block;
